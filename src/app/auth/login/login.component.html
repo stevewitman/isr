@@ -5,6 +5,8 @@
     fxLayoutGap="20px"
     [formGroup]="loginForm"
     (ngSubmit)="onSubmit()">
+    <div class="ad320x100" fxLayoutAlign="center center">320 x 100</div>
+    <h3>Login to IkonSnowReport.com</h3>
     <mat-form-field>
       <input
         type="email"
@@ -24,5 +26,6 @@
       <mat-error>Missing password</mat-error>
     </mat-form-field>
     <button type="submit" mat-raised-button color="primary" [disabled]="loginForm.invalid">Submit</button>
+    <div class="ad320x250" fxLayoutAlign="center center">320 x 250</div>
   </form>
 </section>
