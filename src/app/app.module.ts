@@ -15,6 +15,7 @@ import { DetailsComponent } from './details/details.component';
 import { ForecastsComponent } from './forecasts/forecasts.component';
 import { HomeComponent } from './home/home.component';
 import { ReportTableComponent } from './reports/report-table/report-table.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ReportTableComponent } from './reports/report-table/report-table.compon
     DetailsComponent,
     ForecastsComponent,
     HomeComponent,
-    ReportTableComponent
+    ReportTableComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
