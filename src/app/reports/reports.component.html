@@ -1,14 +1,53 @@
 <div fxLayout="column">
 
   <div class="box-for-728x90" fxLayoutAlign="center center" fxHide.lt-md>
-    <div class="ad-728x90">728 x 90</div>
+    <div class="ad-728x90" fxLayoutAlign="center center">728 x 90</div>
   </div>
-  <div class="box-for-320x100"  fxLayoutAlign="center center" fxHide.gt-sm>
-    <div class="ad-320x100">320 x 100</div>
+  <div class="box-for-320x100" fxLayoutAlign="center center" fxHide.gt-sm>
+    <div class="ad-320x100" fxLayoutAlign="center center">320 x 100</div>
   </div>
   <p>
     reports works!
   </p>
+  <div class="example-container mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name" sticky>
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="state">
+        <th mat-header-cell *matHeaderCellDef> State </th>
+        <td mat-cell *matCellDef="let element"> CO </td>
+      </ng-container>
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="weight">
+        <th mat-header-cell *matHeaderCellDef> Weight </th>
+        <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="symbol">
+        <th mat-header-cell *matHeaderCellDef> Symbol </th>
+        <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+      </ng-container>
+
+
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+
 
 </div>
 
