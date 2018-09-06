@@ -15,7 +15,8 @@ import { DetailsComponent } from './details/details.component';
 import { ForecastsComponent } from './forecasts/forecasts.component';
 import { HomeComponent } from './home/home.component';
 import { ReportTableComponent } from './reports/report-table/report-table.component';
-import { NavComponent } from './nav/nav.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { HeaderComponent } from './navigation/header/header.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NavComponent } from './nav/nav.component';
     ForecastsComponent,
     HomeComponent,
     ReportTableComponent,
-    NavComponent
+    SidenavListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,18 +1,10 @@
-mat-sidenav-container, mat-sidenav-content, mat-sidenav {
-  height: 100%;
-}
-
-mat-sidenav {
-  width: 250px;
-}
-
 a {
   text-decoration: none;
   color: white;
 }
 
 a:hover, a:active {
-  color: lightgray;
+  color: #777;
 }
 
 .navigation-items {
@@ -23,6 +15,15 @@ a:hover, a:active {
 
 .nav-caption {
   padding-left: 12px;
+  padding-right: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.87);
+}
+
+.nav-close {
+  padding-right: 7px;
 }
 
 .ad728x90 {
