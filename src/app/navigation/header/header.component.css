@@ -18,5 +18,6 @@ a:hover, a:active {
 }
 
 .logo-txt {
+  font-size: 15px;
   padding-left: 10px;
 }

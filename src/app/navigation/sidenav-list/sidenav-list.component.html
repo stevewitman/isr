@@ -1,4 +1,4 @@
-<mat-nav-list>
+<mat-nav-list dense>
   <a mat-list-item (click)="onClose()" class="nav-close" fxLayout fxLayoutAlign="end">
     <span class="nav-caption">Close</span>
     <mat-icon>clear</mat-icon>
@@ -38,13 +38,18 @@
   <hr />
 
   <a mat-list-item routerLink="/reports" (click)="onClose()">
-    <mat-icon>list_alt</mat-icon>
+    <mat-icon>ac_unit</mat-icon>
     <span class="nav-caption">Snow Reports</span>
   </a>
 
   <a mat-list-item routerLink="/reports" (click)="onClose()">
     <mat-icon>cloud_queue</mat-icon>
     <span class="nav-caption">Weather Forecasts</span>
+  </a>
+
+  <a mat-list-item routerLink="/reports" (click)="onClose()">
+    <mat-icon>drive_eta</mat-icon>
+    <span class="nav-caption">Road Conditions</span>
   </a>
 
   <a mat-list-item routerLink="/reports" (click)="onClose()">

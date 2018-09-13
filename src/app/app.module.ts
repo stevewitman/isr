@@ -14,7 +14,6 @@ import { ReportsComponent } from './reports/reports.component';
 import { DetailsComponent } from './details/details.component';
 import { ForecastsComponent } from './forecasts/forecasts.component';
 import { HomeComponent } from './home/home.component';
-import { ReportTableComponent } from './reports/report-table/report-table.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { HeaderComponent } from './navigation/header/header.component';
 
@@ -27,7 +26,6 @@ import { HeaderComponent } from './navigation/header/header.component';
     DetailsComponent,
     ForecastsComponent,
     HomeComponent,
-    ReportTableComponent,
     SidenavListComponent,
     HeaderComponent
   ],
