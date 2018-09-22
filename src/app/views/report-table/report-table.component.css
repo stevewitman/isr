@@ -1,0 +1,7 @@
+.report-div {
+  width: 100%;
+  overflow-x:scroll;
+  overflow-y:visible;
+  padding-bottom:1px;
+  direction:rtl;
+}

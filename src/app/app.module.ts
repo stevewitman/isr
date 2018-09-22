@@ -19,6 +19,7 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
 import { HeaderComponent } from './navigation/header/header.component';
 import { LinkTableComponent } from './views/link-table/link-table.component';
 import { StatTableComponent } from './views/stat-table/stat-table.component';
+import { AdImageComponent } from './views/ad-image/ad-image.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { StatTableComponent } from './views/stat-table/stat-table.component';
     SidenavListComponent,
     HeaderComponent,
     LinkTableComponent,
-    StatTableComponent
+    StatTableComponent,
+    AdImageComponent
   ],
   imports: [
     BrowserModule,
