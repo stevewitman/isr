@@ -10,24 +10,30 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
-import { ReportsComponent } from './reports/reports.component';
+import { ViewsComponent } from './views/views.component';
+import { ReportTableComponent } from './views/report-table/report-table.component';
+import { ForecastTableComponent } from './views/forecast-table/forecast-table.component';
 import { DetailsComponent } from './details/details.component';
-import { ForecastsComponent } from './forecasts/forecasts.component';
 import { HomeComponent } from './home/home.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { HeaderComponent } from './navigation/header/header.component';
+import { LinkTableComponent } from './views/link-table/link-table.component';
+import { StatTableComponent } from './views/stat-table/stat-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     LoginComponent,
-    ReportsComponent,
+    ViewsComponent,
+    ReportTableComponent,
+    ForecastTableComponent,
     DetailsComponent,
-    ForecastsComponent,
     HomeComponent,
     SidenavListComponent,
-    HeaderComponent
+    HeaderComponent,
+    LinkTableComponent,
+    StatTableComponent
   ],
   imports: [
     BrowserModule,

@@ -1,12 +1,12 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-reports',
-  templateUrl: './reports.component.html',
-  styleUrls: ['./reports.component.css'],
+  selector: 'app-report-table',
+  templateUrl: './report-table.component.html',
+  styleUrls: ['./report-table.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class ReportsComponent implements OnInit {
+export class ReportTableComponent implements OnInit {
   myStyles1 = {
     'background': 'linear-gradient(to top, #FFF 0%, #FFF 10%, #E3F2FD 10%, #E3F2FD 100%)'
     }
@@ -28,4 +28,3 @@ export class ReportsComponent implements OnInit {
   ngOnInit() {
   }
 }
-

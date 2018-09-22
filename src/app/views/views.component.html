@@ -6,80 +6,22 @@
 
       <mat-tab-group mat-stretch-tabs  color="accent" backgroundColor="disabled">
         <mat-tab label="REPORTS" class="mat-tab-label">
-            <div class="box-for-728x90" fxLayoutAlign="center center" fxHide.lt-md>
-                <div class="ad-728x90" fxLayoutAlign="center center"><img src="./assets/images/placeholder-728x90.JPG" alt=""></div>
-              </div>
-              <div class="box-for-320x100" fxLayoutAlign="center center" fxHide.gt-sm>
-                <div class="ad-320x100" fxLayoutAlign="center center"><img src="./assets/images/placeholder-320x90.JPG" alt=""></div>
-              </div>
 
-          <div class="report">
-            <table class="report-table">
-              <thead>
-                <tr>
-                  <th class="th-resort1"></th>
-                  <th class="th-ytd">YTD</th>
-                  <th class="th-l7">L7</th>
-                  <th class="th-new-2">MON</th>
-                  <th class="th-new-2">TUE</th>
-                  <th class="th-new-2">WED</th>
-                  <th class="th-new-2">THU</th>
-                  <th class="th-new-2">FRI</th>
-                  <th class="th-new-2">SAT</th>
-                  <th class="th-new-1">NEW</th>
-                  <th class="th-base">BASE</th>
-                  <th class="th-resort2">WED, OCT 23, 2018</th>
-                  <th class="th-state"></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="row-odd td-resort">WINTER PARK</td>
-                  <td class="row-odd td-ytd">184</td>
-                  <td class="row-odd td-last7">26</td>
-                  <td class="row-odd td-new" [ngStyle]="myStyles3">3</td>
-                  <td class="row-odd td-new">0</td>
-                  <td class="row-odd td-new">0</td>
-                  <td class="row-odd td-new" [ngStyle]="myStyles10">14</td>
-                  <td class="row-odd td-new" [ngStyle]="myStyles7">7</td>
-                  <td class="row-odd td-new" [ngStyle]="myStyles2">2</td>
-                  <td class="row-odd td-new1" [ngStyle]="myStyles1">1</td>
-                  <td class="row-odd td-new td-base">64</td>
-                  <td class="row-odd td-resort">WINTER PARK</td>
-                  <td class="row-odd td-state">CO</td>
-                </tr>
-                <tr>
-                  <td class="row-even td-resort">ARAPAHOE BASIN</td>
-                  <td class="row-even td-ytd">124</td>
-                  <td class="row-even td-last7">13</td>
-                  <td class="row-even td-new" [ngStyle]="myStyles3">3</td>
-                  <td class="row-even td-new">0</td>
-                  <td class="row-even td-new" [ngStyle]="myStyles1">1</td>
-                  <td class="row-even td-new" [ngStyle]="myStyles7">7</td>
-                  <td class="row-even td-new" [ngStyle]="myStyles2">2</td>
-                  <td class="row-even td-new" [ngStyle]="myStyles1">1</td>
-                  <td class="row-even td-new1">0</td>
-                  <td class="row-even td-new td-base">55</td>
-                  <td class="row-even td-resort">ARAPAHOE BASIN</td>
-                  <td class="row-even td-state">CO</td>
-                </tr>
-                <tr>
-                    <td class="row-odd td-resort">ASPEN HIGHLANDS</td>
-                    <td class="row-odd td-ytd">124</td>
-                    <td class="row-odd td-last7">13</td>
-                    <td class="row-odd td-new" [ngStyle]="myStyles3">3</td>
-                    <td class="row-odd td-new">0</td>
-                    <td class="row-odd td-new">0</td>
-                    <td class="row-odd td-new" [ngStyle]="myStyles1">1</td>
-                    <td class="row-odd td-new" [ngStyle]="myStyles7">7</td>
-                    <td class="row-odd td-new" [ngStyle]="myStyles2">2</td>
-                    <td class="row-odd td-new1" [ngStyle]="myStyles1">1</td>
-                    <td class="row-odd td-new td-base">55</td>
-                    <td class="row-odd td-resort">ASPEN HIGHLANDS</td>
-                    <td class="row-odd td-state">CO</td>
-                  </tr>
-              </tbody>
-            </table>
+          <div class="add-top">
+            <div class="box-for-728x90" fxLayoutAlign="center center" fxHide.lt-md>
+              <div class="ad-728x90" fxLayoutAlign="center center">
+                <img src="./assets/images/placeholder-728x90.JPG" alt="">
+              </div>
+            </div>
+            <div class="box-for-320x100" fxLayoutAlign="center center" fxHide.gt-sm>
+              <div class="ad-320x100" fxLayoutAlign="center center">
+                <img src="./assets/images/placeholder-320x100.JPG" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="reports-table">
+            <app-report-table></app-report-table>
           </div>
         </mat-tab>
         <mat-tab label="WEATHER" class="mat-tab-label">
@@ -87,7 +29,7 @@
                     <div class="ad-728x90" fxLayoutAlign="center center"><img src="./assets/images/placeholder-728x90.JPG" alt=""></div>
                   </div>
                   <div class="box-for-320x100" fxLayoutAlign="center center" fxHide.gt-sm>
-                    <div class="ad-320x100" fxLayoutAlign="center center"><img src="./assets/images/placeholder-320x90.JPG" alt=""></div>
+                    <div class="ad-320x100" fxLayoutAlign="center center"><img src="./assets/images/placeholder-320x100.JPG" alt=""></div>
                   </div>
 
               <div class="forecast">
@@ -264,7 +206,26 @@
 
   <mat-tab label="ROCKIES" class="mat-tab-label">
     <mat-tab-group mat-stretch-tabs  color="accent" backgroundColor="disabled">
-        <mat-tab label="REPORTS" class="mat-tab-label">REPORTS</mat-tab>
+        <mat-tab label="REPORTS" class="mat-tab-label">
+
+            <div class="add-top">
+                <div class="box-for-728x90" fxLayoutAlign="center center" fxHide.lt-md>
+                  <div class="ad-728x90" fxLayoutAlign="center center">
+                    <img src="./../assets/images/placeholder-728x90.JPG" alt="">
+                  </div>
+                </div>
+                <div class="box-for-320x100" fxLayoutAlign="center center" fxHide.gt-sm>
+                  <div class="ad-320x100" fxLayoutAlign="center center">
+                    <img src="./../assets/images/placeholder-320x100.JPG" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="reports-table">
+                <app-report-table></app-report-table>
+              </div>
+
+        </mat-tab>
         <mat-tab label="WEATHER" class="mat-tab-label">Weather</mat-tab>
         <mat-tab label="LINKS" class="mat-tab-label">LINKS</mat-tab>
         <mat-tab label="STATS" class="mat-tab-label">STATS</mat-tab>
