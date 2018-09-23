@@ -1,0 +1,30 @@
+.forecast {
+  width: 100%;
+  padding-bottom:1px;
+}
+.forecast-table {
+  width: 100%;
+  min-width: 1100px;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.forecast-snow {
+  text-align: center;
+  height: 20px;
+  background-color: #3949AB;
+  color: yellow;
+  font-weight: 700;
+}
+.forecast-desc {
+  height: 32px;
+  color: #111;
+}
+.forecast-high {
+  color: red;
+}
+.forecast-low {
+  color: blue;
+}
+.forecast-wind {
+  color: gray;
+}

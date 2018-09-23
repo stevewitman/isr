@@ -1,0 +1,23 @@
+.mat-tab-label {
+  color: #303F9F;
+  font-size: 12px;
+  border-top: 1px solid #5C6BC0;
+  border-left: 1px solid #5C6BC0;
+  min-width: 25% !important;
+  height: 40px !important;
+  padding: 8px;
+  font-weight: 500;
+}
+/* Styles for the active tab label */
+.mat-tab-label.mat-tab-label-active {
+  color: #1A237E;
+  background-color: #E8EAF6;
+  border-top: 1px solid #5C6BC0;
+  border-left: 1px solid #5C6BC0;
+  font-size: 12px;
+  min-width: 25% !important;
+  height: 40px !important;
+  padding: 8px;
+  font-weight: 800;
+}
+

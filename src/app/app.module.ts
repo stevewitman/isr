@@ -10,23 +10,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
-import { ViewsComponent } from './views/views.component';
-import { ReportTableComponent } from './views/report-table/report-table.component';
-import { ForecastTableComponent } from './views/forecast-table/forecast-table.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { ReportTableComponent } from './report-table/report-table.component';
+import { ForecastTableComponent } from './forecast-table/forecast-table.component';
 import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { HeaderComponent } from './navigation/header/header.component';
-import { LinkTableComponent } from './views/link-table/link-table.component';
-import { StatTableComponent } from './views/stat-table/stat-table.component';
-import { AdImageComponent } from './views/ad-image/ad-image.component';
+import { LinkTableComponent } from './link-table/link-table.component';
+import { StatTableComponent } from './stat-table/stat-table.component';
+import { AdImageComponent } from './ad-image/ad-image.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     LoginComponent,
-    ViewsComponent,
+    TabsComponent,
     ReportTableComponent,
     ForecastTableComponent,
     DetailsComponent,
@@ -35,7 +36,8 @@ import { AdImageComponent } from './views/ad-image/ad-image.component';
     HeaderComponent,
     LinkTableComponent,
     StatTableComponent,
-    AdImageComponent
+    AdImageComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
