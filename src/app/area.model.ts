@@ -1,7 +1,7 @@
 export interface Area {
-  i: number;  // index
+  i: string;  // index
   n: string;  // name
   s: string;  // state
-  z: string;  // zone
+  z: number;  // zone
   l: string;  // link
 }

@@ -43,4 +43,8 @@ export class ReportService {
     { i:'38', y:'222', w:'5', a:'0', b:'0', c:'2', d:'0', e:'0', f:'1', g:'2', m:'61', u:true, t:'1537702755' },
     { i:'39', y:'284', w:'12', a:'0', b:'4', c:'6', d:'0', e:'0', f:'2', g:'0', m:'102', u:true, t:'1537702755' },
   ];
+
+  getAvailableReports() {
+    return this.reports;
+  }
 }

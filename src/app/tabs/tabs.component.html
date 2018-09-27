@@ -1,11 +1,11 @@
 <div fxLayout="column">
-  <mat-tab-group mat-stretch-tabs color="accent" backgroundColor="disabled">
+  <mat-tab-group mat-stretch-tabs color="accent" backgroundColor="disabled" #tabGroup (selectedTabChange)="tabChanged($event)">
 
     <mat-tab label="WEST" class="mat-tab-label">
       <mat-tab-group mat-stretch-tabs  color="accent" backgroundColor="disabled">
         <mat-tab label="REPORTS" class="mat-tab-label">
           <app-ad-image></app-ad-image>
-          <app-report-table></app-report-table>
+          <app-report-table [zoneReports]="zoneWest"></app-report-table> <!-- pass zone into report-->
         </mat-tab>
         <mat-tab label="WEATHER" class="mat-tab-label">
           <app-ad-image></app-ad-image>
@@ -26,7 +26,7 @@
       <mat-tab-group mat-stretch-tabs  color="accent" backgroundColor="disabled">
         <mat-tab label="REPORTS" class="mat-tab-label">
           <app-ad-image></app-ad-image>
-          <app-report-table></app-report-table>
+          <app-report-table [zoneReports]="zoneRockies"></app-report-table>
         </mat-tab>
         <mat-tab label="WEATHER" class="mat-tab-label">
           <app-ad-image></app-ad-image>
@@ -47,7 +47,7 @@
       <mat-tab-group mat-stretch-tabs  color="accent" backgroundColor="disabled">
         <mat-tab label="REPORTS" class="mat-tab-label">
           <app-ad-image></app-ad-image>
-          <app-report-table></app-report-table>
+          <app-report-table [zoneReports]="zoneEast"></app-report-table>
         </mat-tab>
         <mat-tab label="WEATHER" class="mat-tab-label">
           <app-ad-image></app-ad-image>
@@ -68,7 +68,7 @@
       <mat-tab-group mat-stretch-tabs  color="accent" backgroundColor="disabled">
         <mat-tab label="REPORTS" class="mat-tab-label">
           <app-ad-image></app-ad-image>
-          <app-report-table></app-report-table>
+          <app-report-table [zoneReports]="zoneCanada"></app-report-table>
         </mat-tab>
         <mat-tab label="WEATHER" class="mat-tab-label">
           <app-ad-image></app-ad-image>
@@ -84,5 +84,5 @@
         </mat-tab>
       </mat-tab-group>
     </mat-tab>
-
 </mat-tab-group>
+

@@ -1,4 +1,5 @@
 export interface Report {
+  i: string;  // index
   y: string;  // year to date
   w: string;  // seven day total
   a: string;  // new snow 6 days ago
@@ -9,6 +10,6 @@ export interface Report {
   f: string;  // new snow 1 day ago
   g: string;  // new snow today
   m: string;  // mid-mountain base
-  t?: dateTime;   // time updated
+  t?: string;   // time updated
   u: boolean; // updated
 }

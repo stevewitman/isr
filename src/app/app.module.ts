@@ -21,6 +21,7 @@ import { LinkTableComponent } from './link-table/link-table.component';
 import { StatTableComponent } from './stat-table/stat-table.component';
 import { AdImageComponent } from './ad-image/ad-image.component';
 import { NewsComponent } from './news/news.component';
+import { ReportService } from './report.service';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,9 @@ import { NewsComponent } from './news/news.component';
     AppRoutingModule,
     FlexLayoutModule,
   ],
-  providers: [],
+  providers: [
+    ReportService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
