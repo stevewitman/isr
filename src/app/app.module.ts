@@ -22,6 +22,7 @@ import { StatTableComponent } from './stat-table/stat-table.component';
 import { AdImageComponent } from './ad-image/ad-image.component';
 import { NewsComponent } from './news/news.component';
 import { ReportService } from './report.service';
+import { SnowDepthDirective } from './snow-depth.directive';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ReportService } from './report.service';
     LinkTableComponent,
     StatTableComponent,
     AdImageComponent,
-    NewsComponent
+    NewsComponent,
+    SnowDepthDirective
   ],
   imports: [
     BrowserModule,

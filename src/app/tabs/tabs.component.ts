@@ -70,12 +70,10 @@ export class TabsComponent implements OnInit {
     for (let i = 0; i < 40; i++) {
       this.combined[i] = {...this.areas[i], ...this.reports[i]};
     }
-
     this.zoneWest = this.combined.filter(function (e) { return e.z === 0; });
     this.zoneRockies = this.combined.filter(function (e) { return e.z === 1; });
     this.zoneEast = this.combined.filter(function (e) { return e.z === 2; });
     this.zoneCanada = this.combined.filter(function (e) { return e.z === 3; });
-
   }
 
   get filterByZone() {

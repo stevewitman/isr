@@ -21,14 +21,14 @@
       <tr *ngFor="let i of zoneReports">
         <td class="row-odd td-resort">{{ i.n }}</td>
         <td class="row-odd td-ytd">{{ i.y }}</td>
-        <td class="row-odd td-last7">{{i.w }}</td>
-        <td class="row-odd td-new" [ngStyle]="myStyles3">{{ i.a }}</td>
-        <td class="row-odd td-new">{{ i.b }}</td>
-        <td class="row-odd td-new">{{ i.c }}</td>
-        <td class="row-odd td-new" [ngStyle]="myStyles10">{{ i.d }}</td>
-        <td class="row-odd td-new" [ngStyle]="myStyles7">{{ i.e }}</td>
-        <td class="row-odd td-new" [ngStyle]="myStyles2">{{ i.f }}</td>
-        <td class="row-odd td-new1" [ngStyle]="myStyles1">{{ i.g }}</td>
+        <td class="row-odd td-ytd">{{ i.w }}</td>
+        <td class="row-odd td-new" appSnowDepth [snowDepth]="i.a">{{ i.a }}</td>
+        <td class="row-odd td-new" appSnowDepth [snowDepth]="i.b">{{ i.b }}</td>
+        <td class="row-odd td-new" appSnowDepth [snowDepth]="i.c">{{ i.c }}</td>
+        <td class="row-odd td-new" appSnowDepth [snowDepth]="i.d">{{ i.d }}</td>
+        <td class="row-odd td-new" appSnowDepth [snowDepth]="i.e">{{ i.e }}</td>
+        <td class="row-odd td-new" appSnowDepth [snowDepth]="i.f">{{ i.f }}</td>
+        <td class="row-odd td-new1" appSnowDepth [snowDepth]="i.g">{{ i.g }}</td>
         <td class="row-odd td-new td-base">{{ i.m }}</td>
         <td class="row-odd td-resort">{{ i.n }}</td>
         <td class="row-odd td-state">{{ i.s }}</td>
