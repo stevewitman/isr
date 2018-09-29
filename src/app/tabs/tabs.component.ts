@@ -67,9 +67,18 @@ export class TabsComponent implements OnInit {
 
   ngOnInit() {
     this.reports = this.reportService.getAvailableReports();
-    for (let i = 0; i < 40; i++) {
-      this.combined[i] = {...this.areas[i], ...this.reports[i]};
-    }
+
+    this.combined = this.reports.map((x) => {
+      let today = parseInt(x.g);
+      if (x.g === '--') {
+        today = 0;
+      } else {
+        today = parseInt(x.g);
+      }
+      console.log('today:::', today)
+      x = {...this.areas[x.i], ...this.reports[x.i]};x.w = parseInt(x.a) + parseInt(x.b) + parseInt(x.c) + parseInt(x.d) + parseInt(x.e) + parseInt(x.f) + today;
+      return x
+    })
     this.zoneWest = this.combined.filter(function (e) { return e.z === 0; });
     this.zoneRockies = this.combined.filter(function (e) { return e.z === 1; });
     this.zoneEast = this.combined.filter(function (e) { return e.z === 2; });
