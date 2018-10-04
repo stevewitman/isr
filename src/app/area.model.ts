@@ -1,5 +1,5 @@
 export interface Area {
-  i: string;  // index
+  i: number;  // index
   n: string;  // name
   s: string;  // state
   z: number;  // zone

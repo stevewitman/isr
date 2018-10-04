@@ -18,20 +18,20 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let i of zoneReports">
-        <td class="row-odd td-resort">{{ i.n }}</td>
-        <td class="row-odd td-ytd">{{ i.y }}</td>
-        <td class="row-odd td-ytd">{{ i.w }}</td>
-        <td class="row-odd td-new" appSnowDepth [snowDepth]="i.a">{{ i.a }}</td>
-        <td class="row-odd td-new" appSnowDepth [snowDepth]="i.b">{{ i.b }}</td>
-        <td class="row-odd td-new" appSnowDepth [snowDepth]="i.c">{{ i.c }}</td>
-        <td class="row-odd td-new" appSnowDepth [snowDepth]="i.d">{{ i.d }}</td>
-        <td class="row-odd td-new" appSnowDepth [snowDepth]="i.e">{{ i.e }}</td>
-        <td class="row-odd td-new" appSnowDepth [snowDepth]="i.f">{{ i.f }}</td>
-        <td class="row-odd td-new1" appSnowDepth [snowDepth]="i.g">{{ i.g }}</td>
-        <td class="row-odd td-new td-base">{{ i.m }}</td>
-        <td class="row-odd td-resort">{{ i.n }}</td>
-        <td class="row-odd td-state">{{ i.s }}</td>
+      <tr *ngFor="let x of zoneReports" (click)="setClickedRow(x.i)">
+        <td class="row-odd td-resort">{{ x.n }}</td>
+        <td class="row-odd td-ytd">{{ x.y }}</td>
+        <td class="row-odd td-ytd">{{ x.w }}</td>
+        <td class="row-odd td-new" appSnowDepth [snowDepth]="x.a">{{ x.a }}</td>
+        <td class="row-odd td-new" appSnowDepth [snowDepth]="x.b">{{ x.b }}</td>
+        <td class="row-odd td-new" appSnowDepth [snowDepth]="x.c">{{ x.c }}</td>
+        <td class="row-odd td-new" appSnowDepth [snowDepth]="x.d">{{ x.d }}</td>
+        <td class="row-odd td-new" appSnowDepth [snowDepth]="x.e">{{ x.e }}</td>
+        <td class="row-odd td-new" appSnowDepth [snowDepth]="x.f">{{ x.f }}</td>
+        <td class="row-odd td-new1" appSnowDepth [snowDepth]="x.g">{{ x.g }}</td>
+        <td class="row-odd td-new td-base">{{ x.m }}</td>
+        <td class="row-odd td-resort">{{ x.n }}</td>
+        <td class="row-odd td-state">{{ x.s }}</td>
       </tr>
     </tbody>
   </table>

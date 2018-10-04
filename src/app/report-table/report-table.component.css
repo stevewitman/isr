@@ -66,14 +66,8 @@ td {
   width: 6%;
 }
 .row-odd {
-  background-color: #E3F2FD;
-  color: #666;
-  height: 50px;
-  font-weight: 500;
-}
-.row-even {
-  background-color: #E3F2FD;
-  color: #666;
+  /* background-color: #E3F2FD;
+  color: #666; */
   height: 50px;
   font-weight: 500;
 }
@@ -113,4 +107,14 @@ td {
   border-left: 1px solid #5C6BC0;
   font-weight: 300;
 }
-
+td a {
+  display:block;
+  width:100%;
+  color: #FFF;
+}
+td a:link {
+  text-decoration: none;
+}
+td a:visited {
+  text-decoration: none;
+}
