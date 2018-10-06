@@ -6,6 +6,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { SignupComponent } from './auth/signup/signup.component';
@@ -22,7 +23,9 @@ import { StatTableComponent } from './stat-table/stat-table.component';
 import { AdImageComponent } from './ad-image/ad-image.component';
 import { NewsComponent } from './news/news.component';
 import { ReportService } from './report.service';
+import { NwsService } from './nws.service';
 import { SnowDepthDirective } from './snow-depth.directive';
+import { NwsForecastComponent } from './nws-forecast/nws-forecast.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,8 @@ import { SnowDepthDirective } from './snow-depth.directive';
     StatTableComponent,
     AdImageComponent,
     NewsComponent,
-    SnowDepthDirective
+    SnowDepthDirective,
+    NwsForecastComponent
   ],
   imports: [
     BrowserModule,
@@ -50,9 +54,11 @@ import { SnowDepthDirective } from './snow-depth.directive';
     MaterialModule,
     AppRoutingModule,
     FlexLayoutModule,
+    HttpClientModule,
   ],
   providers: [
-    ReportService
+    ReportService,
+    NwsService
   ],
   bootstrap: [AppComponent]
 })

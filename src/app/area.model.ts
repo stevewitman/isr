@@ -11,4 +11,5 @@ export interface Area {
   ru: number; // runs
   pk: number; // peak elevation
   ba: number; // base elevation
+  nws: string; // NWS forecast
 }

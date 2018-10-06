@@ -11,5 +11,5 @@ export interface Report {
   g: number;  // new snow today
   m: number;  // mid-mountain base
   t?: string;   // time updated
-  s: boolean; // status
+  u: boolean; // updated?
 }

@@ -5,7 +5,7 @@ import { Directive, ElementRef, Input, OnInit } from '@angular/core';
 })
 export class SnowDepthDirective implements OnInit {
 
-  @Input() snowDepth: Number;
+  @Input() snowDepth: number;
 
   depth: Number;
   depthStyle;
@@ -16,7 +16,7 @@ export class SnowDepthDirective implements OnInit {
 
   ngOnInit() {
     this.depth = this.snowDepth * 8.33;
-    this.depthStyle = 'linear-gradient(to top, #FFF 0%, #FFF ' + this.depth + '%, #E3F2FD ' + this.depth + '%, #E3F2FD 100%';
+    this.depthStyle = 'linear-gradient(to top, #ffff8c 0%, #ffff8c ' + this.depth + '%, #E3F2FD ' + this.depth + '%, #E3F2FD 100%';
     this.el.nativeElement.style.background = this.depthStyle;
   }
 

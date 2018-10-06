@@ -1,0 +1,8 @@
+<td class="td-forecast" *ngFor="let p of nwsForecast.properties.periods">
+  <div class="forecast-desc">{{ p.name }}</div>
+  <div class="forecast-desc">{{ p.shortForecast }}</div>
+  <img [src]="p.icon">
+  <div class="forecast-high">{{ p.temperature }}</div>
+  <div class="forecast-wind">{{ p.windDirection }} {{ p.windSpeed }}</div>
+  <div class="forecast-snow">- - -</div>
+</td>
