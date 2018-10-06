@@ -61,7 +61,7 @@ export class TabsComponent implements OnInit {
     { i: 37, n: 'Revelstoke', s: 'BC', z: 3, l: 'http://www.revelstokemountainresort.com'},
     { i: 38, n: 'Blue Mountain', s: 'ON', z: 3, l: 'https://www.bluemountain.ca'},
     { i: 39, n: 'Mont Tremblant', s: 'QE', z: 3, l: 'https://www.tremblant.ca'},
-  ]
+  ];
 
   constructor(private reportService: ReportService) { }
 
@@ -69,15 +69,10 @@ export class TabsComponent implements OnInit {
     this.reports = this.reportService.getAvailableReports();
 
     this.combined = this.reports.map((x) => {
-      let today = parseInt(x.g);
-      if (x.g === '--') {
-        today = 0;
-      } else {
-        today = parseInt(x.g);
-      }
-      x = {...this.areas[x.i], ...this.reports[x.i]};x.w = parseInt(x.a) + parseInt(x.b) + parseInt(x.c) + parseInt(x.d) + parseInt(x.e) + parseInt(x.f) + today;
-      return x
-    })
+      x = {...this.areas[x.i], ...this.reports[x.i]};
+      return x;
+    });
+    console.log(JSON.stringify(this.combined));
     this.zoneWest = this.combined.filter(function (e) { return e.z === 0; });
     this.zoneRockies = this.combined.filter(function (e) { return e.z === 1; });
     this.zoneEast = this.combined.filter(function (e) { return e.z === 2; });

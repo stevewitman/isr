@@ -28,7 +28,7 @@
         <td class="row-odd td-new" appSnowDepth [snowDepth]="x.d">{{ x.d }}</td>
         <td class="row-odd td-new" appSnowDepth [snowDepth]="x.e">{{ x.e }}</td>
         <td class="row-odd td-new" appSnowDepth [snowDepth]="x.f">{{ x.f }}</td>
-        <td class="row-odd td-new1" appSnowDepth [snowDepth]="x.g">{{ x.g }}</td>
+        <td class="row-odd td-new1" appSnowDepth [snowDepth]="x.g">{{ x.g === -1 ? '--' : x.g }}</td>
         <td class="row-odd td-new td-base">{{ x.m }}</td>
         <td class="row-odd td-resort">{{ x.n }}</td>
         <td class="row-odd td-state">{{ x.s }}</td>
