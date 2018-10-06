@@ -7,7 +7,7 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class ReportTableComponent {
-  @Input() zoneReports;
+  @Input() zoneAreas;
 
   public selectedRow: Number = -1;
   public selectedRecord;
@@ -16,11 +16,11 @@ export class ReportTableComponent {
 
   setClickedRow(x) {
     this.selectedRow = x;
-    // this.selectedRecord = parseInt(this.zoneReports[x].i, 10);
-    // console.log(this.zoneReports)
+    // this.selectedRecord = parseInt(this.zoneAreas[x].i, 10);
+    // console.log(this.zoneAreas)
     console.log('selectedRow: ', this.selectedRow, typeof(this.selectedRow))
     // console.log('selectedRecord:', this.selectedRecord);
-    // console.log(this.zoneReports[this.selectedRecord].n);
+    // console.log(this.zoneAreas[this.selectedRecord].n);
   }
 
 }

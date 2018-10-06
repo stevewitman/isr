@@ -1,3 +1,32 @@
-<p>
-  stat-table works!
-</p>
+<div class="report-div">
+  <table class="report-table">
+    <thead>
+      <tr>
+        <th class="th-resort1"></th>
+        <th class="th-ytd">ACRES</th>
+        <th class="th-new-2">ANNUAL SNOW</th>
+        <th class="th-new-2">LIFTS</th>
+        <th class="th-new-2">RUNS</th>
+        <th class="th-new-2">PEAK ELEV</th>
+        <th class="th-new-2">BASE ELEV</th>
+        <th class="th-new-2">VERTICAL</th>
+        <th class="th-resort2"></th>
+        <th class="th-state"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let x of zoneAreas">
+        <td class="row-odd td-resort">{{ x.n }}</td>
+        <td class="row-odd td-new">{{ x.ac | number }}</td>
+        <td class="row-odd td-new">{{ x.an }}</td>
+        <td class="row-odd td-new">{{ x.li }}</td>
+        <td class="row-odd td-new">{{ x.ru }}</td>
+        <td class="row-odd td-new">{{ x.pk | number }}</td>
+        <td class="row-odd td-new">{{ x.ba | number }}</td>
+        <td class="row-odd td-new">{{ x.ve | number }}</td>
+        <td class="row-odd td-resort">{{ x.n }}</td>
+        <td class="row-odd td-state">{{ x.s }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
