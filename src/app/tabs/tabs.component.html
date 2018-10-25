@@ -9,7 +9,7 @@
         </mat-tab>
         <mat-tab label="WEATHER" class="mat-tab-label">
           <app-ad-image></app-ad-image>
-          <app-forecast-table></app-forecast-table>
+          <app-forecast-table [zoneAreas]="zoneWest"></app-forecast-table>
         </mat-tab>
         <mat-tab label="LINKS" class="mat-tab-label">
           <app-ad-image></app-ad-image>
@@ -30,7 +30,7 @@
         </mat-tab>
         <mat-tab label="WEATHER" class="mat-tab-label">
           <app-ad-image></app-ad-image>
-          <app-forecast-table></app-forecast-table>
+          <app-forecast-table [zoneAreas]="zoneRockies"></app-forecast-table>
         </mat-tab>
         <mat-tab label="LINKS" class="mat-tab-label">
           <app-ad-image></app-ad-image>
@@ -69,6 +69,28 @@
         <mat-tab label="REPORTS" class="mat-tab-label">
           <app-ad-image></app-ad-image>
           <app-report-table [zoneAreas]="zoneCanada"></app-report-table>
+        </mat-tab>
+        <mat-tab label="WEATHER" class="mat-tab-label">
+          <app-ad-image></app-ad-image>
+          <app-forecast-table></app-forecast-table>
+        </mat-tab>
+        <mat-tab label="LINKS" class="mat-tab-label">
+          <app-ad-image></app-ad-image>
+          <app-link-table></app-link-table>
+        </mat-tab>
+        <mat-tab label="STATS" class="mat-tab-label">
+          <app-ad-image></app-ad-image>
+          <app-stat-table [zoneAreas]="zoneCanada"></app-stat-table>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-tab>
+
+
+    <mat-tab label="ALL" class="mat-tab-label">
+      <mat-tab-group mat-stretch-tabs  color="accent" backgroundColor="disabled">
+        <mat-tab label="REPORTS" class="mat-tab-label">
+          <app-ad-image></app-ad-image>
+          <app-report-table [zoneAreas]="zoneAll"></app-report-table>
         </mat-tab>
         <mat-tab label="WEATHER" class="mat-tab-label">
           <app-ad-image></app-ad-image>

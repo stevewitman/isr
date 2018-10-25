@@ -16,11 +16,7 @@ export class ReportTableComponent {
 
   setClickedRow(x) {
     this.selectedRow = x;
-    // this.selectedRecord = parseInt(this.zoneAreas[x].i, 10);
-    // console.log(this.zoneAreas)
     console.log('selectedRow: ', this.selectedRow, typeof(this.selectedRow))
-    // console.log('selectedRecord:', this.selectedRecord);
-    // console.log(this.zoneAreas[this.selectedRecord].n);
   }
 
 }

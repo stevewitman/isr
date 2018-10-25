@@ -8,7 +8,6 @@ import { Component, Input, OnInit } from '@angular/core';
 export class StatTableComponent implements OnInit {
   @Input() zoneAreas;
 
-
   constructor() { }
 
   ngOnInit() {

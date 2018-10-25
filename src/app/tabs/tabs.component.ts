@@ -19,6 +19,7 @@ export class TabsComponent implements OnInit {
   zoneRockies = [];
   zoneEast = [];
   zoneCanada = [];
+  zoneAll = [];
 
   areas: Area[] = [
     { i: 0, z: 0, n: 'Alpine Meadows', s: 'CA', l: 'https://squawalpine.com',
@@ -29,7 +30,6 @@ export class TabsComponent implements OnInit {
       nws: 'https://api.weather.gov/gridpoints/SGX/76,77/forecast'},
     { i: 2, z: 0, n: 'June Mountain', s: 'CA', l: 'https://www.junemountain.com',
       ac: 1500, ve: 2950, an: 250, li: 7, ru: 41, pk: 10090, ba: 7545,
-      ac: 198, ve: 1665, an: 100, li: 12, ru: 32, pk: 8805, ba: 7140,
       nws: 'https://api.weather.gov/gridpoints/REV/55,21/forecast'},
     { i: 3, z: 0, n: 'Mammoth', s: 'CA', l: 'https://www.mammothmountain.com',
       ac: 3500, ve: 3106, an: 400, li: 28, ru: 150, pk: 11059, ba: 7953,
@@ -158,6 +158,7 @@ export class TabsComponent implements OnInit {
     this.zoneRockies = this.combined.filter(function (e) { return e.z === 1; });
     this.zoneEast = this.combined.filter(function (e) { return e.z === 2; });
     this.zoneCanada = this.combined.filter(function (e) { return e.z === 3; });
+    this.zoneAll = this.combined;
   }
 
   tabChanged = (tabChangeEvent: MatTabChangeEvent): void => {
